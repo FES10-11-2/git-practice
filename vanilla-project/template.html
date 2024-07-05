@@ -9,59 +9,62 @@
 <body>
 
 
-  <!-- delivery -->
-  <div class="delivery">
-    <div>
+  <!-- detail page delivery -->
+  <div class="list">
+    <div class="list__item delivery">
       <dt>배송</dt>
       <dd>
         <span>샛별배송</span>
-        <span>23시 전 주문 시 내일 아침 7시 전 도착<br />(대구 부산 울산 샛별배송 운영시간 별도 확인)</span>
+        <span class="desc">23시 전 주문 시 내일 아침 7시 전 도착<br />(대구 부산 울산 샛별배송 운영시간 별도 확인)</span>
       </dd>
     </div>
-    <div>
+    <div class="list__item seller">
       <dt>판매자</dt>
       <dd>컬리</dd>
     </div>
-    <div>
+    <div class="list__item packaging">
       <dt>포장타입</dt>
       <dd>
         <span>상온 (종이포장)</span>
-        <span>택배배송은 에코 포장이 스티로폼으로 대체됩니다.</span>
+        <span class="desc">택배배송은 에코 포장이 스티로폼으로 대체됩니다.</span>
       </dd>
     </div>
-    <div>
+    <div class="list__item sales">
       <dt>판매단위</dt>
       <dd>1봉</dd>
     </div>
-    <div>
+    <div class="list__item weight">
       <dt>중량/용량</dt>
       <dd>123g*4봉</dd>
     </div>
-    <div>
+    <div class="list__item origin">
       <dt>원산지</dt>
       <dd>상세페이지 별도표기</dd>
     </div>
-    <div>
+    <div class="list__item allergy">
       <dt>알레르기정보</dt>
       <dd>
         -대두, 밀, 쇠고기 함유<br />
         -계란, 우유, 메밀, 땅콩, 고등어, 게, 돼지고기, 새우, 복숭아, 토마토, 아황산류, 호두, 잣, 닭고기, 오징어, 조개류(굴, 전복, 홍합 포함)를 사용한 제품과 같은 제조시설에서 제조
       </dd>
     </div>
-    <div>
-      <dt>상품선택</dt>
-      <dd>
-        <div>
-          <strong>[풀무원] 탱탱쫄면 (4개입)</strong>
-          <div>
-            <!-- <button type="button">-</button>
-            <input type="" />
-            <button type="button">+</button> -->
-          </div>
-          <span>4,980원</span>
-        </div>
-      </dd>
-    </div>
   </div>
+
+  <!-- button -->
+  <!-- 1. 높이 44px -->
+  <button type="button" class="button button--md button--primary button--rounded">중복확인</button>
+  <button type="button" class="button button--md button--outlined button--rounded">인증번호 받기</button>
+  
+  <!-- 2. 높이 54px -->
+  <button type="button" class="button button--lg button--primary button--rounded">로그인</button>
+  <button type="button" class="button button--lg button--outlined button--rounded">회원가입</button>
+
+  <!-- 3. 그외 (문의, 상세정보) -->
+  <button type="button" class="button button--sm button--inquiry">카카오톡 문의</button>
+  <button type="button" class="button button--lg button--secondary">상세정보</button>
+
+  <!-- 4. popup 버튼 -->
+  <button type="button" class="button--popup left">오늘 하루 안 보기</button>
+  <button type="button" class="button--popup right">닫기</button>
 </body>
 </html>

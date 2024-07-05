@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Pretendard-Regular';
+}
+
+button {
+  background-color: inherit;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+html, body {
+  font-family: 'Pretendard-Regular';
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --border: #E1E1E1;
+  --content: #333;
+  --primary: #5F0080;
+}
+
+/* ===== detail page delivery ===== */
+.list {
+  width: 35rem;
+}
+
+.list__item {
+  display: flex;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  &:first-child {
+    border-top: 1px solid var(--border);
+  }
+
+  dt {
+    width: 8rem;
+    color: #6B6B6B;
+    flex-shrink: 0;
+  }
+
+  dd {
+    display: flex;
+    flex-direction: column;
+    flex-flow: 1;
+
+    span{
+      margin-bottom: 4px;
+
+      &.desc {
+        color: #898989;
+      }
+    }
+  }
+}
+
+/* ===== login ===== */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--content);
+}
+
+.button--sm {
+  height: 2.5rem;
+}
+.button--md {
+  height: 2.75rem;
+}
+.button--lg {
+  height: 3.375rem;
+}
+
+.button--rounded {
+  border-radius: 0.25rem;
+}
+
+.button--primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.button--outlined {
+  background-color: inherit;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.button--secondary {
+  background-color: var(--white);
+}
+
+.button--inquiry {
+  border: 1px solid #c4c4c4;
+}
+
+.button--popup {
+  width: 13.75rem;
+  height: 5.375rem;
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--content);
+  
+  &.left {
+    border-bottom-left-radius: 0.9375rem;
+  }
+
+  &.right {
+    border-bottom-right-radius: 0.9375rem;
+  }
+}
