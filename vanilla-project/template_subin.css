@@ -1,15 +1,54 @@
-:root {
-  --gray-300: #a6a6a6;
-  --content: #333;
-}
-
+/* reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+ul,
+li {
+  padding-left: 0;
+  list-style: none;
+}
+button {
+  background-color: inherit;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
 
+/* color */
+:root {
+  --gray-300: #a6a6a6;
+  --content: #333;
+}
 .sort {
+  display: flex;
+}
+.sort__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sort__item::after {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  align-items: center;
+  content: '';
+  width: 1px;
+  height: 0.8rem;
+  background-color: var(--gray-300);
+  margin: 0 0.5rem;
+}
+.sort__item:last-child::after {
+  display: none;
+}
+.sort__item.is__selected button {
+  color: var(--content);
+  font-weight: 700;
+}
+
+/* .sort {
   display: flex;
   list-style: none;
   gap: 0.5rem;
@@ -21,7 +60,7 @@
 }
 
 .sort__item::after {
-  content: "";
+  content: '';
   width: 0.0625rem;
   height: 0.625rem;
   background-color: var(--gray-300);
@@ -32,7 +71,7 @@
 }
 
 .sort__item:last-child::after {
-  content: "";
+  content: '';
   width: 0;
   padding-right: 0;
 }
@@ -48,4 +87,4 @@ button {
 
 .is__selected {
   color: var(--content);
-}
+} */
